@@ -20,10 +20,10 @@ const resultFromFetch = fetch ('https://pokeapi.co/api/v2/pokemon/1')
 
     const dataTypes = data['types'];
     const dataFirstType = dataTypes[0];
-    const dataSecondType = datatypes[1];
+    const dataSecondType = dataTypes[1];
     pokeTypeOne.textContent = dataTypes[0]['type']['name'];
     if (dataSecondType) {
-       pokeTypeTwo.textContent = dataSecondType['type']['name']; 
+       pokeTypeOne.textContent = dataFirstType['type']['name']; 
     } else {
         pokeTypeTwo.textContent = '';
     }
